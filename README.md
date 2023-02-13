@@ -12,7 +12,7 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 
 ## Code
 - [X] Création d'un endpoint qui permet de faire combattre 2 pokémons en fournissant leur ID.
-- [ ] Endpoint qui liste 3 pokémons aléatoires ( avec affichage des stats )
+- [X] Endpoint qui liste 3 pokémons aléatoires ( avec affichage des stats )
 
 ## Locust
 - [ ] Rédaction d'un scénario ( pertinent )
