@@ -1,3 +1,4 @@
+"""Utils functions"""
 from datetime import date
 from app import models
 from app.sqlite import SessionLocal, engine

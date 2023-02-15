@@ -7,7 +7,7 @@ yann.coornaert1@mail-formateur.net
 
 ### Lancement du projet
 python -m virtualenv venv
-source venv/bin/activate 
+source venv/bin/activate //Pour windows: venv/Scripts/activate.bat
 pip install -r requirements.txt
 
 uvicorn main:app --reload 
@@ -40,7 +40,7 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 ![graph](graph.png)
 
 ## Pylint
-- [ ] Note minimal de 8.5/10
+- [X] Note minimale de 8.5/10
 
 ## Unittest
 - [X] 7 tests unitaires

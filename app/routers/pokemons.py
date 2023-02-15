@@ -1,3 +1,4 @@
+"""Pokemons router"""
 from random import randint
 from typing import List
 from sqlalchemy.orm import Session
@@ -18,12 +19,12 @@ def get_pokemons(skip: int = 0, limit: int = 100000, database: Session = Depends
     pokemons = actions.get_pokemons(database, skip=skip, limit=limit)
     return pokemons
 
-@router.get("/fight/{premierPokemon}/{secondPokemon}")
-def pokemons_battle(premierPokemon: int, secondPokemon: int):
+@router.get("/fight/{premier_pokemon}/{second_pokemon}")
+def pokemons_battle(premier_pokemon: int, second_pokemon: int):
     """
         Return the winner of a fight between two pokemons
     """
-    return battle_pokemon(premierPokemon, secondPokemon)
+    return battle_pokemon(premier_pokemon, second_pokemon)
 
 
 @router.get("/random")

@@ -1,7 +1,10 @@
+"""
+    Defines Trainer, Pokemon, Item classes and the database models used in the application
+"""
+# pylint: disable=too-few-public-methods
 from sqlalchemy import Column, ForeignKey, Integer, String, Date
 from sqlalchemy.orm import relationship
 from .sqlite import Base
-
 
 class Trainer(Base):
     """
@@ -21,7 +24,7 @@ class Pokemon(Base):
         Class representing a pokemon
         Parameters:
             api_id (int): id from the pokeapi
-            name (str): Populate with the pokeapi data 
+            name (str): Populate with the pokeapi data
     """
     __tablename__ = "pokemons"
 
