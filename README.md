@@ -7,9 +7,7 @@ yann.coornaert1@mail-formateur.net
 
 ### Lancement du projet
 python -m virtualenv venv
-
 source venv/bin/activate 
-
 pip install -r requirements.txt
 
 uvicorn main:app --reload 
