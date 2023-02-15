@@ -3,7 +3,7 @@
 yann.coornaert1@mail-formateur.net
 
 python -m virtualenv venv
-source venv/bin/activate 
+source venv/bin/activate //pour Windows: venv/Scripts/activate
 pip install -r requirements.txt
 uvicorn main:app --reload 
 locust --config=.locust.conf
