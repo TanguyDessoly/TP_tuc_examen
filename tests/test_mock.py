@@ -1,4 +1,5 @@
 """Test the mock of the pokeapi."""
+# pylint: disable=E0401
 from fastapi.testclient import TestClient
 from main import app
 

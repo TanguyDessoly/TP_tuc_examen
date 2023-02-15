@@ -1,4 +1,5 @@
 """Unit tests for the API."""
+# pylint: disable=E0401
 from fastapi.testclient import TestClient
 from main import app
 

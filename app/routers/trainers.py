@@ -1,4 +1,5 @@
 """Trainers routes"""
+# pylint: disable=E0401
 from typing import List
 from sqlalchemy.orm import Session
 from fastapi import APIRouter,  Depends, HTTPException

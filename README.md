@@ -52,7 +52,7 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 
 ## Pylint
 ```pylint app/ tests/```
-- [X] Note minimal de 8.5/10
+- [X] Note minimal de 8.5/10 -> 9.79/10 !
 
 ## Pytest
 ```python -m pytest```

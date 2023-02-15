@@ -1,4 +1,5 @@
 """Pokemons router"""
+# pylint: disable=E0401
 from random import randint
 from typing import List
 from sqlalchemy.orm import Session
