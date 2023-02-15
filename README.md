@@ -24,13 +24,17 @@ yann.coornaert1@mail-formateur.net
 
 ### Lancement du projet
 ```python -m virtualenv venv```
+
 ```source venv/bin/activate ```
+
 ```pip install -r requirements.txt```
+
 ```uvicorn main:app --reload ```
 
 
 ### Coverage
 ```coverage run -m pytest --profile # remplace la commande python```
+
 ```coverage html # génère le rapport en html```
 
 # Spécifications
