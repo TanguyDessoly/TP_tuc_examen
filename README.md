@@ -45,9 +45,8 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 - [ ] Note minimal de 8.5/10
 
 ## Unittest
-- [ ] 7 tests unitaires
-
-- [ ] 5 tests unitaires mocks
+- [X] 7 tests unitaires
+- [X] 5 tests unitaires mocks
 
 ## Coverage
-- [ ] 85% 
+- [X] 85% -> 95% ! 

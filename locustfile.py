@@ -16,7 +16,7 @@ class User(HttpUser):
     @task
     def test_start(self):
     # Create a trainer*
-        response = self.client.post("/trainers/", json={"name": "Abderwan", "birthdate": "2002-12-28"})
+        response = self.client.post("/trainers/", json={"name": "Abderwan", "birthdate": "2002-06-10"})
         self.created_trainer = response.json()["id"]
 
     @task

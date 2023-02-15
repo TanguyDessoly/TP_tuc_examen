@@ -38,7 +38,7 @@ def battle_pokemon(first_api_id, second_api_id) :
         if battle_result < 0:
             return {"Pokemon gagnant":secondPokemon["name"].capitalize()}
         else:
-            return {"Egalité"}
+            return {"Égalité"}
     return None
 
 

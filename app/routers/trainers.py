@@ -15,10 +15,10 @@ def create_trainer(trainer: schemas.TrainerCreate, database: Session = Depends(g
 
 
 @router.get("", response_model=List[schemas.Trainer])
-def get_trainers(skip: int = 0, limit: int = 100, database: Session = Depends(get_db)):
+def get_trainers(skip: int = 0, limit: int = 100000, database: Session = Depends(get_db)):
     """
         Return all trainers
-        Default limit is 100
+        Default limit is 100000
     """
     trainers = actions.get_trainers(database, skip=skip, limit=limit)
     return trainers
