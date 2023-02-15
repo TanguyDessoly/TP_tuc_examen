@@ -51,7 +51,7 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 ![graph](graph.png)
 
 ## Pylint
-```pylint application/ tests/```
+```pylint app/ tests/```
 - [ ] Note minimal de 8.5/10
 
 ## Pytest
