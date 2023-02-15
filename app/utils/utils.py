@@ -1,3 +1,5 @@
+"""Utils functions"""
+# pylint: disable=E0401
 from datetime import date
 from app import models
 from app.sqlite import SessionLocal, engine
