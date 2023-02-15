@@ -1,31 +1,43 @@
 ## BARAN Rémi - DERHILLE Erwan - DESSOLY Tanguy - LABADIE Pierre 
 
+Ce fork a pour but de réaliser le projet de fin de formation de la formation Python TEST de l'EPSI.
+
+Nous avons implémenter un système de combat de pokémon en utilisant l'API de POKEAPI.
+
+Le système de combat se base sur les statistiques des pokémons. Le pokémon qui a le plus de statistiques supérieures gagne le combat.
+
+De plus, un endpoint listant 3 pokémons aléatoires a été implémenté.
+
+Un locustfile a été créé pour tester le système d'insertion (utilisateur, pokemon et item) dans la base de données ainsi que des endpoints (combat).
+
+Le locustconf simule la sortie du jeu avec 1000 utilisateurs sur une heure à la hauteur de 6 utilisateurs par secondes.
+
+Nous avons améliorer le code en utilisant pylint afin de détecter les erreurs et les problèmes de code, en améliorant la documentation également.
+
+Les tests ont un coverage de 95%.
+
+Nous avons ajouté des tests unitaires et des tests unitaires mocks pour tester les fonctions de l'application.
 
 ### Mail contact professeur
 yann.coornaert1@mail-formateur.net
 
 
 ### Lancement du projet
-python -m virtualenv venv
-source venv/bin/activate //Pour windows: venv/Scripts/activate.bat
-pip install -r requirements.txt
+```python -m virtualenv venv```
 
-uvicorn main:app --reload 
+```source venv/bin/activate ``` //pour windows:```venv/Scripts/activate.bat ```
 
-locust --config=.locust.conf
+```pip install -r requirements.txt```
 
-### Pylint
-pylint application/ tests/
+```uvicorn main:app --reload ```
+
 
 ### Coverage
-coverage run -m pytest --profile # remplace la commande python
-coverage html # génère le rapport en html
+```coverage run -m pytest --profile # remplace la commande python```
 
-### Test
-python -m pytest
+```coverage html # génère le rapport en html```
 
 # Spécifications
-
 Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, permettant de fournir des informations si nécessaires.
 
 ## Code
@@ -33,16 +45,17 @@ Un fichier readme indiquant le groupe et décrivant ce qui a était réalisé, p
 - [X] Endpoint qui liste 3 pokémons aléatoires ( avec affichage des stats )
 
 ## Locust
+```locust --config=.locust.conf```
 - [X] Rédaction d'un scénario ( pertinent )
 - [X] Un exemple de test de performance à réaliser fourni via un .locust.conf.
- Ici, on créé un utilisateur, on lui attribue un nom, on lui attribue un pokémon et un item, on fait combattre le pokemon créé avec un pokemon existant. Comme cela, on teste la création, l'attribution puis le combat. Cela à l'échelle de sortie du jeu, donc 1000 utilisateurs sur une heure à la hauteur de 6 utilisateurs par secondes.
-
 ![graph](graph.png)
 
 ## Pylint
-- [X] Note minimale de 8.5/10
+```pylint app/ tests/```
+- [X] Note minimal de 8.5/10
 
-## Unittest
+## Pytest
+```python -m pytest```
 - [X] 7 tests unitaires
 - [X] 5 tests unitaires mocks
 
